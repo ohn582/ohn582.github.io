@@ -1,11 +1,11 @@
 # Site settings
-author: Neal JIn Oh
-title: 
+author: Neal Oh
+title: Neal Blogging
 header-img: img/home-bg.png
 email: no4259@gmail.com
-copyright_name: Neal JIn Oh
+copyright_name: Neal Oh
 description: > # this means to ignore newlines until "baseurl:"
-  
+  time to blog
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  ohn582
