@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Creating Issuses with CRUD"
+title:      "Creating with CRUD"
 date:       2020-01-05 15:20:07 -0500
 permalink:  mod_3_javascript_project
 ---
@@ -54,4 +54,4 @@ For the Patch method, it allows us to update a new comment and replacing the old
                 })
 ```
 
-As for 
+As for delete method, it allows to delete the comment that you created. Hovewer, it's a little bit diffrent comparing to post method becauce when you create a add event listener, the event listner has to have a 'click' instead of submit because we aren't creating a form and we are only creating a sinlgle button. Also we do not need headers along with JSON.stringify since we are only deleting a comment.
