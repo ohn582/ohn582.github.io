@@ -22,7 +22,7 @@ CRUD stands or represent four basic functions create, read, update, destroy. CRU
             </form>
 ```
 
-Once you created the event listener, you always need to have 'preventDefault()' this prevents the web from refresshing it when you submit a comment. After creating prevent defult, you must write a proper fetch url, it's an easy way to  fetch resources across the network. Then you should an open and closed curly bracket for both method and headers. Create 'body: JSON.stringify({.......})',
+Once you created the event listener, you always need to have 'preventDefault()' this prevents the web from refresshing it when you submit a comment. After creating prevent defult, you must write a proper fetch url, it's an easy way to  fetch resources across the network. Then you should an open and closed curly bracket for both method and headers. Create 'body: JSON.stringify({.......})', this method allows JavaScript object or value to convert a JSON string.
 
 ```
          fetch(`http://localhost:3000/reviews`, {
