@@ -22,7 +22,7 @@ CRUD stands or represent four basic functions create, read, update, destroy. CRU
             </form>
 ```
 
-Once you created the event listener, you always need to have 'preventDefault()' this prevents the web from refresshing it when you submit a comment. After creating prevent defult, you must write a proper fetch url, it's an easy way to  fetch resources across the network. Then you should an open and closed curly bracket for both method and headers. Create 'body: JSON.stringify({.......})', this method allows JavaScript object or value to convert a JSON string.
+Once you created the event listener, you always need to have 'preventDefault()' this prevents the web from refresshing it when you submit a comment. After creating prevent defult, you must write a proper fetch url, it's an easy way to  fetch resources across the network. Then you should an open and closed curly bracket for both method and headers. Create 'body: JSON.stringify({.......})', this method allows JavaScript object or value to convert a JSON string. In the 'JSON.stringify', you can create any value depanding where your values are.
 
 ```
          fetch(`http://localhost:3000/reviews`, {
@@ -38,3 +38,20 @@ Once you created the event listener, you always need to have 'preventDefault()' 
                 })
         })
 ```
+
+For the Patch method, it allows us to update a new comment and replacing the old comment. The fetch has to have a url and an Id because it needs to fine the spacific type of resource that you want to change, the setup is the same as the patch method. 
+
+```
+                fetch(`http://localhost:3000/reviews/${id}`, {
+                    method: "PATCH",
+                    headers: {
+                        "Content-type": "application/json",
+                        "Accept": "application/json"
+                    },
+                    body: JSON.stringify({
+                        content: editContent
+                    })
+                })
+```
+
+As for 
