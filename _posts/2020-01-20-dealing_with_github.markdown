@@ -19,7 +19,9 @@ If you want to create a repositorie in command write the following:
 
 git add 
 git commit -m "first commit"
-git remote add origin 'whatever the url is'
+git remote add origin 'your repository'
 git push -u origin master
+
+Lets just say you want to copy a file to your desktop you need to clone it (it's a same as copying) you need to write $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY to copy a file frome someone.
 
 
